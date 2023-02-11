@@ -16,3 +16,105 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Color switcher */
+
+#menu-elements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-menu {
+  color: #fafafa;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: rgb(82, 210, 99);
+}
+
+#stopBtn {
+  background-color: rgb(214, 92, 92);
+}
+
+#startBtn:disabled,
+#stopBtn:disabled {
+  background-color: rgb(151, 151, 151);
+}
+
+/* timer */
+
+#datetime-picker {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+  font-size: 25px;
+  border-radius: 50px;
+  border: teal solid 2px;
+  text-align: center;
+}
+
+.datetime-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 10px 20px;
+
+  border-radius: 50px;
+  border: #137564 solid 2px;
+
+  font-size: 25px;
+  color: #fcfcfc;
+  background-color: #18caa3;
+  transition: border 0.5s linear, background-color 0.5s linear;
+  cursor: pointer;
+}
+.datetime-button:disabled {
+  border: rgb(239, 245, 245) solid 2px;
+  background-color: rgb(211, 211, 211);
+}
+
+.timer {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+
+  font-family: sans-serif;
+  color: #fcfcfc;
+}
+
+.field {
+  padding: 12px;
+  border-radius: 2px;
+  display: inline-block;
+
+  background: #18caa3;
+}
+
+.value {
+  padding: 18px;
+  border-radius: 2px;
+  background: #137564;
+  display: inline-block;
+}
+
+.label {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
